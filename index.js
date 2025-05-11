@@ -11,6 +11,7 @@ const clanIDList = [
     "2nd, and more if you want"
 ]; 
 
+let index = 0;
 
 client.on('ready', () => {
 
