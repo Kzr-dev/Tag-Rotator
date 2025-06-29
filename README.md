@@ -46,8 +46,8 @@ Edit the `clanIDList` in `index.js` to include the guild IDs (clan IDs) you want
 
 ```js
 const clanIDList = [
-    "123456789012345678",
-    "234567890123456789"
+    "1",
+    "2"
 ];
 ```
 
