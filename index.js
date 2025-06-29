@@ -5,16 +5,16 @@ const client = new Client({
     checkUpdate: false
 });
 
-const token = "your token";
+const token = ""; 
 const clanIDList = [
-    "1st",
-    "2nd, and more if you want"
+    "1",
+    "2",
+    "3"
 ]; 
 
 let index = 0;
 
 client.on('ready', () => {
-
     console.log(`${client.user.displayName} is ready`);
 
     setInterval(() => {
@@ -33,9 +33,10 @@ client.on('ready', () => {
         }).catch(err => {
             console.error(`Error:`, err.response?.data || err.message);
         });
-    }, 30000); //30 sec but you can change (its milliseconds)
-    
-    
+
+        index++;
+
+    }, 30000); 
 });
 
 client.login(token);
